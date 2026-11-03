@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050510; /* Deep dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.neon-container {
+    text-align: center;
+    padding: 4rem;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.03), rgba(255, 0, 255, 0.03));
+    /* Magenta and Cyan internal and external glows */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1), 
+                inset 0 0 20px rgba(255, 0, 255, 0.1);
+}
+
+.neon-text {
+    color: #ffffff;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    /* Electric cyan text glow */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 2.5rem;
+}
+
+.highlight {
+    color: #ff00ff;
+    /* Magenta text glow */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+}
+
+.cyber-btn {
+    background-color: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 
+                inset 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.cyber-btn:hover {
+    background-color: #00ffff;
+    color: #050510;
+    box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff;
+    transform: scale(1.05);
+}
